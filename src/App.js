@@ -42,14 +42,15 @@ function App() {
         <button className='btn btn-outline-secondary' onClick={addAtividade}>+ Atividade</button>      
       </div>     
     </form>
-    <div className="mt-3">
-      <ul className='list-group'>
-        {atividades.map((ativ) => (
-          <li key={ativ.id} className='list-group-item'>
-            {ativ.id} - {ativ.descricao}
-          </li>
+    <div className="mt-3">      
+        {atividades.map((ativ) => (         
+          <div key={ativ.id} className="card mb-2 shadow-sm">            
+            <div className="card-body">
+              <p className="card-text"> {ativ.id} - {ativ.descricao}</p>
+            </div>
+          </div>
         ))}                 
-      </ul>
+      
     </div>
     </>
   );
