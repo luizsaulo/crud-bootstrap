@@ -38,6 +38,8 @@ function App() {
     setAtividades([ ...atividades, { ...atividade }]);   
   }
 
+  function 
+
   function deletarAtividade(id) {
     const atividadesFiltradas = atividades.filter(atividade => atividade.id !== id);
     setAtividades([...atividadesFiltradas]);
@@ -52,6 +54,7 @@ function App() {
     <>
     <AtividadeForm 
       addAtividade={addAtividade}
+      atualizarAtividade={atualizarAtividade}
       ativSelecionada={atividade}
       atividades={atividades}
     />
