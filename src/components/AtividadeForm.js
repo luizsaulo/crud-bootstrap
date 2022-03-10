@@ -89,11 +89,10 @@ export default function AtividadeForm(props) {
                     type="text" 
                     className="form-control" 
                 />
-            </div>
             <hr />
-            <div className='col-12'>
-                {
-                    atividade.id === 0 ? (
+            </div>
+            <div className='col-12 mt-0'>
+                {atividade.id === 0 ? (
                     <button 
                         className='btn btn-outline-secondary' 
                         type='submit'

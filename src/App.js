@@ -21,7 +21,7 @@ let initialState = [
 function App() {
   const [index, setIndex] = useState(0);
   const [atividades, setAtividades] = useState(initialState);
-  const [atividade, setAtividade] = useState({});
+  const [atividade, setAtividade] = useState({ id:0 });
 
   useEffect(() => {
     atividades.length <= 0 ? setIndex(1) :
